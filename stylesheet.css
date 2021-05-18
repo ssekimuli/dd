@@ -1,0 +1,1094 @@
+/*-----css stylesheet---*/
+
+/*-----Table of content for css---*/
+
+/*    1.0 navigation css      */
+/*    2.0 Home page css       */
+/*    3.0 Music page css      */
+/*    4.0 profile css         */
+/*    5.0 contactus css       */
+/*    6.0 aboutus css         */
+/*    7.0 single_player css   */
+/*    8.@media screen query css  */
+ * {
+         box-sizing: border-box;
+      }
+ html, body {
+         margin: 0;
+         padding: 0;
+
+      }
+ body {
+         display: flex;
+         min-height: 100vh;
+         flex-direction: column;
+      }
+      main {
+         flex: 1 0 auto;
+      }
+a{
+  text-decoration: none;
+}
+
+/*    2.0 Home page css       */
+#bgslider{
+      overflow: hidden;
+    }
+    #bgslider figure {
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: left;
+      font-size: 0;
+      animation: 30s slidy infinite;
+    }
+    #bgslider figure img{
+      width: 20%;
+      float: left;
+      height: 100vh;
+    }
+    @keyframes slidy {
+      0% {left: 0%;}
+      20% {left: 0%;}
+      25% {left: -100%;}
+      45% {left: -100%;}
+      50% {left: -200%;}
+      70% {left: -200%;}
+      75% {left:-300%;}
+      95% {left: -300%;}
+      100% {left:-400%;}
+      }
+.homepage{
+  width: 70%;
+  float: right;
+}
+.homepage ul{
+  text-align: center;
+  margin-top:10px;
+  margin-right: 40px;
+}
+.homepage ul li{
+  display: inline-block;
+  
+  align-items: center;
+  list-style: none;
+  background-color: #ff007f;
+}
+.homepage ul li a{
+  color: #fff;
+  font-size: 20px;
+  padding:15px;
+}
+.homepage ul li a:hover{
+background-color: #000;
+color: #fff;
+}
+.over-lay{
+    overflow: hidden;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.5); }
+
+    .word-art{
+      z-index: 1;
+      line-height: 300px;
+      font-size: 40px;
+      margin: 0 auto;
+      color:#fff;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      word-break: break-all
+      justify-content:center;
+      width: 500px;
+       font-family: 'Faster One', cursive;
+    }
+/*    1.0 navigation css      */
+nav{
+      z-index: 3;
+      position: fixed;
+      background-color:#ffde22;
+      height: 80px;
+      width: 100%;
+     }
+label.logo{
+      color: #000;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+     font-family:'Press Start 2P',cursive;
+}
+
+nav ul {
+      float:right;
+      margin-right: 20px;
+}
+nav ul li{
+      display: inline-block;
+      line-height: 60px;
+      margin:0 5px;
+}
+nav ul li a{
+      color: #000;
+      font-size: 15px;
+      padding: 7px 10px;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-weight: bold;
+}
+
+
+nav ul li a:hover{
+        color:#fff;
+       background-color:#ff8928; 
+      transition: .5s;
+}
+nav ul li a.active{
+      color:#fff;
+       background-color:#ff8928;
+}
+
+.checkbtn{
+      font-size: 30px;
+      color: white;
+      float: right;
+      line-height: 80px;
+      margin-right: 40px;
+      cursor: pointer;
+      display: none;
+}
+
+#check{
+      display: none;
+}
+
+/*    1.0 navigation css ends here      */
+/*-----hompe cover imge---*/
+.bg-photo{
+ background-color: #08030e;
+}
+ .bg-photo img{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:100vh;
+      width:100%;
+
+ }
+ /*---lightbox---*/
+ .lightbox {
+         display: table; /* helps us center the lightbox-content */
+         /* make the lightbox occupy the entire page */
+         position: relative;
+         bottom:-100%; /* position the lightbox above the top edge */
+         width:300px;
+         height: 300px;
+         background: rgba(0, 0, 0, 0.7); /* black with 0.7 opacity */
+         transition-duration: 2s; /* set the duration of the slide down effect */
+      }
+      .lightbox:target {
+         top:0; /* cover the entire screen */
+      }
+      .lightbox-content {
+         display: table-cell;
+         vertical-align: middle; /* vertically center */
+         text-align: center; /* horizontally center */
+      }
+      .close {
+         /* position the CLOSE button to the top-right corner */
+         position: absolute;
+         top: 10px;
+         right: 10px;
+         
+         /* style the close button */
+         font-size: 20px;
+         font-weight: 300;
+         color:#ff007f;
+         font-weight: bold;
+         z-index: 1;
+      }
+      
+      /* make the image responsive */
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+ /*----lightbox--*/
+/*-----hompe cover imge ends here---*/
+/*-----soc-media links----*/
+
+#soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+.copyright{
+  color: #ff007f;
+}
+/*-----soc-media links ends here----*/
+
+/*----footer starts here---------*/
+.brand{
+  color: #ff007f;
+      font-size: 45px;
+      padding: 10px;
+      font-weight: bold;
+      line-height: 100px;
+      text-transform: uppercase;
+      color: gray;
+}
+ footer {
+         height: 100px;
+         position: relative; /* required to position the copyright at the bottom */
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 10px;
+         background: #111;
+         /* positions the copyright at the bottom of the footer */
+         position:relative;
+         bottom: 0px;
+         left: 0px;
+      }
+      .footer-body{
+        margin-top: -10px;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding:0px;
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 35px;
+         width: 35%;
+         padding:70px 10px;
+         height: 20px;
+          font-weight: bold;
+         color: gray;
+         margin-top: -80px; 
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+         margin-top: -1px;
+      }
+       .footer-body p{
+        margin-top: 20px;
+       }
+      
+       .footer-body ol {
+        display:block;
+        padding: 3px;
+         list-style-type: none;
+         float: right;
+         margin-top:12px;
+      }
+      .footer-body ol li a{
+        color: gray;
+      }
+}
+}
+/*-----------footer ends here-------*/
+/*    2.0 Home page css ends here       */
+
+
+
+/*    3.0 background of music css        */
+.back{
+      padding-top: 75px;
+
+      }
+/*    3.0 background of music ends here css       */
+
+
+/*    4.0 layout-panel of music grid page css       */
+#wrap{
+      flex-wrap: wrap;
+       justify-content: space-around;
+        background: #101820ff;
+
+      }
+.box
+{
+      display: flex;
+      padding-top:100px;
+      padding-left: 1px;
+      padding-right: 1px;
+     
+      }
+
+/*    5.0 single-player css       */
+            .box> .container {
+                  background: #fff;
+                  width: 300px;
+                  height: 365px;
+                  margin: 4px;
+                  margin-bottom: 15px;
+                 -webkit-box-shadow: 0 10px 50px 0 #fff;
+  				        box-shadow: 0 10px 50px 0 #fff;
+            }
+            .ad-banner > .go{
+            	width: 100%;
+            	height: 50px;
+            	margin-top: 1px;
+            	display: block;
+            	            }
+
+            .ad-banner img {
+               width: 100%;
+               height:200px;
+               display: block;
+            }
+            .music-player{
+               margin-bottom:-10px;
+               left: 5;
+               margin-top:40px;
+            }
+            .title{
+               display: block;
+               height: 14px;
+               width: 100%;
+               margin-top: -17px;
+            }
+            .title img{
+               border-radius: 50%;
+               width: 50px;
+               height: 50px;
+               float: left;
+               border:1px solid gray;   
+            }
+           
+            .title h2{
+            margin-left: 52px;
+            height: 20px;
+             width: 170px;
+             padding: 2px;
+             font-size: 12px;
+             font-weight: 10;
+             color:#007fff;
+             font-weight: bold;
+            }
+            .title .btn-text{
+             margin-top: 5px;
+            }
+           .title h2 .btn-text{
+            width: 100%;
+            overflow-x: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            transition: text-indent 5s linear;
+
+           }
+           .title h2:hover .btn-text{
+            text-indent: -350px;
+              animation: 30s slidy infinite;
+           }
+           .title h1{
+            font-size: 12px;
+            color:#4e4e4e;
+             margin-left: 92px;
+              margin-top:-5px;
+           }
+           .download-btn{
+           	margin-top: 14px;
+           	position: relative;
+           	font-size: 10px;
+           	color:#001414;
+           	 font-weight: bold;
+           	 height: 0;
+           	 margin-left: 5;
+           }
+            .download-btn a{
+               color:#001414;
+               margin-top: -30px;
+               float: right;
+               margin-right: 10px;
+               font-size: 15px;
+            }
+            .platform{
+               display: block;
+               margin-top: -47px;
+               list-style: none;
+            }
+            .platform ul li{
+               display: inline-block;
+               text-align: center;  
+            }
+            .platform ul li a{
+               padding: 10px;
+               color: #ffde22;
+            }
+
+/*    5.0 single-player ends here css       */
+/*    4.0 layout-panel of music grid page ends here css       */
+
+
+
+/*    8.@media screen query starts here css  */
+
+/*screen  320*/
+@media (max-width: 320px){
+      label.logo{
+      color: #ff007f;
+      font-size: 20px;
+      line-height: 60px;
+      padding: 0 3px;
+      margin-left: 0px;
+}
+nav{
+      z-index: 3;
+      position: fixed;
+      background-color:#ffde22;
+      height: 60px;
+      width: 100%;
+      
+}
+nav ul {
+      float:right;
+      margin-right: 20px;
+      margin-top: -15px;
+     padding:1px;
+
+}
+nav ul li a{
+   margin-top: -30px;
+   padding: 2px;
+}
+.checkbtn{
+      font-size: 20px;
+      float: right;
+      line-height: 60px;
+      margin-right: 10px;
+      cursor: pointer;
+      display: none;
+}
+.lightbox {
+         display: table; /* helps us center the lightbox-content */
+         /* make the lightbox occupy the entire page */
+         position: relative;
+         bottom:-100%; /* position the lightbox above the top edge */
+         width:150px;
+         height: 200px;
+         background: rgba(0, 0, 0, 0.2); /* black with 0.7 opacity */
+         transition-duration: 2s; /* set the duration of the slide down effect */
+      }
+      .close {
+         /* position the CLOSE button to the top-right corner */
+         position: absolute;
+         top: 0px;
+         right: 5px;
+         
+         /* style the close button */
+         font-size: 10px;
+         font-weight: 150;
+         color:#ff007f;
+         font-weight: bold;
+      }
+
+#wrap{
+  background-color:#6c6c6c;
+}
+.box
+{
+      display: flex;
+      padding-top:70px;
+     
+      }
+.box> .container {
+                 background: #fff;
+                  width: 100%;
+                  height: 350px;
+                  margin: 3.7px;
+                  margin-bottom: 5px;
+                  -webkit-box-shadow: 0 10px 50px 0 #fff;
+  				box-shadow: 0 10px 50px 0 #fff;
+            }
+           
+            .title h2{
+            margin-left: 55px;
+            margin-top: -15px;
+            height: 20px;
+             width: 170px;
+             padding: 2px;
+             font-size: 12px;
+             font-weight: 10;
+             color:#007fff;
+             font-weight: bold;
+            }
+            .title .btn-text{
+             margin-top: 5px;
+            }
+          
+           .title h1{
+            font-size: 12px;
+            color:#4e4e4e;
+             margin-left: 92px;
+              margin-top:-8px;
+           }
+           .download-btn{
+           	margin-top: 5px;
+           	position: relative;
+           	font-size: 10px;
+           	color:#001414;
+           	 font-weight: bold;
+           	 height: 0;
+           	 margin-left: 5;
+           	 margin-bottom: 5px;
+           }
+            .platform ul li a{
+                  padding: 10px;
+                  color: #ffde22;
+            }
+             
+      #soc-media{
+      margin-top:20px;
+      margin-left: 10px;
+      
+    z-index: 3; 
+} 
+      #soc-media ul li{
+      padding: 8px;
+      display: inline-block;
+}
+#soc-media ul li a{
+      background: #ff007f;
+      padding: 5px;
+      border-radius: 50%;
+       justify-content: center;
+       color: #ffffff;
+}
+#soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+
+ .download-btn a{
+               color:#001414;
+               margin-top:-20px;
+               float: right;
+               margin-right: 10px;
+               font-size: 15px;
+            }
+footer {
+         color: #fff;
+         background: #333;
+         position: relative; /* required to position the copyright at the bottom */
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 20px;
+         background: #111;
+         /* positions the copyright at the bottom of the footer */
+         position:relative;
+         bottom: 0px;
+         left: 0px;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding:0px;
+
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 17.5px;
+         width: 30%;
+         padding:95px 5px;
+         height: 5px;
+          font-weight: bold;
+         color: gray;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+   .brand{
+  color: #ff007f;
+      font-size: 25px;
+      padding: 10px;
+      font-weight: bold;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: gray;
+} 
+.homepage ul{
+ margin-right: 15px;
+}
+.homepage ul li{
+  border-radius: 50%;
+   margin-top: -30px;
+} 
+.homepage ul li a{
+  color: #fff;
+  font-size: 5px;
+  padding:4px;
+}
+.word-art{
+      z-index: 2;
+      line-height: 100px;
+      font-size: 25px;
+      color:#d40025;
+      font-weight: bold;
+      text-align: center;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 3px #fff;
+      word-break: break-all
+      justify-content:center;
+    }
+    .pro-page img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border:5px solid white;
+}
+}
+/*screen  480*/
+@media screen{
+    #soc-media{
+      margin-top:20px;
+      margin-left: 10px;
+      
+    z-index: 3; 
+} 
+      #soc-media ul li{
+      padding: 8px;
+      display: inline-block;
+}
+#soc-media ul li a{
+      background: #ff007f;
+      padding: 5px;
+      border-radius: 50%;
+       justify-content: center;
+       color: #ffffff;
+}
+#soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+ .ad-banner > .go{
+            	width: 100%;
+            	height: 50px;
+            display: block;
+            margin-top: 1px;
+            }
+            .ad-banner img {
+                  width: 100%;
+                  height:200px;
+                  display: block;
+                 
+            }
+ .download-btn a{
+                color:#001414;
+               margin-top:4px;
+               float: right;
+               margin-right: 10px;
+               font-size: 15px;
+            }
+.homepage ul{
+  text-align: center;
+  margin-top:15px;
+  margin-right: 40px;
+}
+.homepage ul li a{
+  color: #fff;
+  font-size: 15px;
+  padding:5px;
+}
+footer {
+         color: #fff;
+         background: #333;
+         position: relative; /* required to position the copyright at the bottom */
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 20px;
+         background: #111;
+         /* positions the copyright at the bottom of the footer */
+         position:relative;
+         bottom: 0px;
+         left: 0px;
+      }
+      /* float the divs */
+      .footer-body > div {
+         float: left;
+         padding:0px;
+
+      }
+      /* sets the width of the first column */
+      .footer-body > div:first-child {
+         font-size: 30px;
+         width: 30%;
+         padding:95px 5px;
+         height: 5px;
+          font-weight: bold;
+         color: gray;
+      }
+      /* sets the width of the second column */
+      .footer-body > div:last-child {
+         width: 65%;
+      }
+         .brand{
+  color: #ff007f;
+      font-size: 35px;
+      padding: 10px;
+      font-weight: bold;
+      line-height: 50px;
+      text-transform: uppercase;
+      color: gray;
+} 
+.homepage ul li a{
+  color: #fff;
+  font-size: 15px;
+  padding:5px;
+}   
+}
+/*screen  568*/
+/*screen  600*/
+@media screen (max-width: 600px){
+      .box >.container {
+                 background: #fff;
+                  width: 50%;
+                  height: 300px;
+                  margin: 2px;
+                  margin-bottom: 5px;
+                  box-shadow: 1px 1px 2.7px 2.7px #3e4864;
+            }
+  .homepage ul li a{
+  color: #fff;
+  font-size: 10px;
+  padding:5px;
+}   
+}
+/*screen  768*/
+/*screen  800*/
+/*screen  858*/
+@media (max-width: 858px){
+  .bg-photo img{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:60vh;
+      width:100%;
+
+ }
+      .checkbtn{
+            display: block;
+            color:#ff007f;
+      }
+    nav ul{
+            position: fixed;
+            width: 90%;
+            height: 81.5vh;
+            background: #000;
+            top:64px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+            z-index: 3;
+      }
+      nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 20px;
+      }
+      nav ul li a{
+            font-size: 20px;
+            color:#ff414e;
+      }
+      nav ul li a:hover,a.active{
+       background-color:#ff8928; 
+      transition: .5s
+}
+      #check:checked ~ ul{
+            left: 0;
+
+      }
+      
+      .ad-banner > .go{
+            	width: 100%;
+            	height: 50px;
+            	display: block;
+            	margin-top: 1px;
+            }
+            .ad-banner img {
+               width: 100%;
+               height:200px;
+               display: block;
+            }
+      .platform{
+                  display: block;
+                  list-style: none;
+            }
+      .title{
+                
+       height: 14px;
+      width: 100%;
+      margin-top:-40px;
+            }
+      .title h2 {
+      	margin-top:-35px;
+      }
+            .platform ul li a{
+               padding: 10px;
+               color: #ffde22;
+            }
+            #soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+.download-btn{
+				margin-top: -18px;
+               font-size: 10px;
+               text-indent:5px;
+               color:#000;
+               height: 0;
+           }
+            .download-btn a{
+                color:#001414;
+               margin-top:20px;
+               float: right;
+               margin-right: 10px;
+               font-size: 15px;
+            }
+ main {
+         flex: 1 0 auto;
+         line-height: 60px;
+      }
+ footer {
+        color: #175782;
+         background: #333;
+         position:relative; /* required to position the copyright at the bottom */
+         font-size:12px;
+
+      }
+      .footer-copyright {
+         width: 100%;
+         height: 7px;
+         background: #111;
+         color: #ff007f;
+         /* positions the copyright at the bottom of the footer */
+         padding: 10px;
+         position:relative;
+         bottom: 0px;
+         left: 0px;
+         line-height: 5px;
+      }
+.homepage ul li a{
+  color: #fff;
+  font-size: 15px;
+  padding:5px;
+}
+}
+
+/*screen  900*/
+/*screen  952 done*/
+@media (max-width: 952px){
+   .bg-photo img{
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height:40vh;
+      width:100%;
+
+ }
+  main {
+         flex: 1 0 auto;
+        ;
+      }
+  
+      label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+      }
+      nav ul li a{
+            font-size: 16px;
+      }
+      #soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+.ad-banner > .go{
+            	width: 100%;
+            	height: 50px;
+            	margin-top: 1px;
+            	display: block;
+            	background-color: orange;
+            }
+            .ad-banner img {
+                  width: 100%;
+                  height:200px;
+                 display: block;
+            }
+}
+/*screen  992*/
+/*screen  1024*/
+/*screen  1200*/
+/*screen  1224*/
+/*screen 1280 */
+@media (max-width: 1280px){
+  
+   footer {
+         color: #4e4e4e;
+         background: #000;
+         position: relative; 
+         font-size: 80%;
+      }
+       .footer-copyright {
+         width: 100%;
+         height: 35px;
+         background: #000;
+         /* positions the copyright at the bottom of the footer */
+         padding: 10px;
+         position: absolute;
+         bottom: 0px;
+         left: 0px;
+         color: #ff007f;
+      }
+      #soc-media ul li a:hover,a.active{
+      color: #ffffff;
+      background-color:#000; 
+      transition: .5s
+}
+
+.homepage ul li a{
+  color: #fff;
+  font-size: 20px;
+  padding:5px;
+}
+}
+/*screen  1824*/
+
+/*    4.0 profile css   starts      */
+.pro{
+ background: #101820ff;
+}
+.pro ul{
+  margin-left: 25px;
+
+}
+.pro ul li{
+  display: inline-block;
+  padding: 5px;
+  list-style: none;
+   color: #00ffff;
+}
+.pro ul li a{
+   font-size: 20px;
+}
+.pro ul li a:hover{
+  color: #ff007f;
+}
+.pro-page{  
+  position:absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-40%,-40%);
+  color: orange;
+  font-weight: bold;
+  font-family: 'Special Elite', cursive;
+  display: block;
+}
+.pro-page img{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  border:5px solid #fff;
+}
+
+/*    4.0 profile css   ends      */
+/*----show page css--*/
+.shows {
+    display: flex;
+      padding-top:100px;
+      padding-left: 10px;
+      padding-right: 10px;
+}
+.shows > .show-box{
+ max-width: 500px;
+  max-height: 700px;
+  margin: 5px;
+  margin-bottom: 10px;
+   -webkit-box-shadow: 0 10px 50px 0 #fff;
+    box-shadow: 0 10px 50px 0 #fff;
+}
+.show-box img{
+  width: 100%;
+  height: 100%;
+}
+/*---show page css- ends-*/
+/*---contact css--*/
+#contact-wrap{
+  flex-wrap: wrap;
+}
+.Contact-box{
+  display: flex;
+  padding: 10px;
+    background: #000;
+    font-family: 'Kristi', cursive;
+    font-weight: bold;
+}
+.contact-box > .contact-d{
+  margin-top:150px;
+  max-width: 500px;
+  left: 0;
+}
+
+.contact-d ul li{
+  display: block;
+  padding: 25px;
+  list-style: none;
+  color: #fff;
+  text-indent: 15px;
+  font-size: 20px;
+  height: 80px;
+}
+.contact-d ul li a{
+font-size: 20px;
+color: #00eb76;
+}
+.contact-d h2{
+	color: #fff;
+}
+.contact-d{
+   margin-top:150px;
+  color:orange;
+   text-indent: 30px;
+}
+
+/*---contact css---*/
+.pagination-container{
+      text-align: center;
+      height: 75px;
+       background:#101820ff;
+       margin-top: -20px;
+}
+.pagination{
+      display: inline-block;
+}
+.pagination li {
+      display: inline;
+}
+.pagination a {
+      color:gold;
+      padding: 5px 8px;
+      float: left;
+       border-radius: 50%;
+}
+.pagination ul li a.active{
+ background-color:#000;
+ color: gold;
+}
+.pagination ul li a:hover{
+  color:#ff4a6a;
+}
+         
